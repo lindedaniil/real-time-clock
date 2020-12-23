@@ -103,10 +103,10 @@ int main(void)
 	__enable_irq();
 	initRTC();
 	time.RTC_H12 = RTC_HourFormat_24;
-  time.RTC_Hours = 12;
-  time.RTC_Minutes = 00;
-  time.RTC_Seconds = 00;
-  RTC_SetTime(RTC_Format_BIN, &time);
+        time.RTC_Hours = 12;
+        time.RTC_Minutes = 00;
+        time.RTC_Seconds = 00;
+        RTC_SetTime(RTC_Format_BIN, &time);
 
 	
 	EXTI_ClearITPendingBit(EXTI_Line17);
